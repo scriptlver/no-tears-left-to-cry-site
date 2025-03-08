@@ -2,7 +2,7 @@
 
 hiii everyone! 💗
 
-i present my simple website, developed with **html**, **css**, and **python** (for the backend)! 💗 this project is all about **ariana grande's song _no tears left to cry_**, allowing users to interact with a button that shows snippets of the song.
+i present my simple website, developed with **html**, **css**, **javascript** and **python** ! 💗 this project is all about **ariana grande's song _no tears left to cry_**, allowing users to interact with a button that shows snippets of the song.
 
 ## 🎶 features
 
@@ -12,12 +12,13 @@ i present my simple website, developed with **html**, **css**, and **python** (f
 - 💗 a clean, aesthetic design inspired by the song's vibe
 
 ## 🌟 about the project
-this was a great project for me to practice my **web development** skills and explore the integration of **html**, **css**, and **python**. i had so much fun creating it and hope you enjoy the experience! 💗
+this was a great project for me to practice my **web development** skills and explore the integration of **html**, **css**, **javacsript** and **python**. i had so much fun creating it and hope you enjoy the experience! 💗
 
 ## 🚀 technologies used
 - html
 - css
-- python (backend)
+- javascript
+- python 
 
 ## 📸 preview
 ![ ](1.png)
