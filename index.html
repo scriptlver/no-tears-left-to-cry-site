@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Tears Left to Cry by scriptlver</title>
+
+  <link href="https://fonts.cdnfonts.com/css/sacramento" rel="stylesheet">
+                
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      width: 300px;
+    }
+
+    .album-cover {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: 'Sacramento', sans-serif;
+      font-weight: 300;
+      font-size: 55px;
+      color: white;
+      position: absolute;
+      top: -30%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00bcd4;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+    }
+
+    #verse-display {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .credit {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 22px;
+      opacity: 0.5;
+      letter-spacing: 2px;
+      font-family: 'Sacramento', cursive;
+      color: rgba(255, 255, 255, 0.7);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .heart-image {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 70px;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
+
+    .heart-image:hover {
+      opacity: 1;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 40px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      display: none;
+    }
+
+    .heart-container:hover .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="credit">by scriptlver</div>
+
+  <div class="heart-container">
+    <img src="heart.jpeg.png" alt="Heart" class="heart-image">
+    <div class="tooltip">just for fun! site created for studies</div>
+  </div>
+
+  <video autoplay loop muted>
+    <source src="Video.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <img src="cover.jpg" alt="Capa do Álbum Sweetener" class="album-cover">
+    <h1>No Tears Left To Cry</h1>
+    <button onclick="getVerse()">Click here for a snippet of the song!</button>
+    <p id="verse-display"></p>
+  </div>
+
+  <script>
+    const verses = [
+      "Right now, I'm in a state of mind",
+      "I wanna be in, like, all the time",
+      "Ain't got no tears left to cry",
+      "So I'm pickin' it up, I'm pickin' it up",
+      "I'm lovin', I'm livin', I'm pickin' it up",
+      "Yeah, we turnin' it up",
+      "Ain't got no tears in my body",
+      "I ran out, but boy, I like it, I like it",
+      "Don't matter how, what, where, who tries it",
+      "We're out here vibin', we vibin",
+      "Even when it's rainin' down",
+      "Can't stop, so shut your mouth",
+      "And if you don't know, then now you know it, babe",
+      "Know it, babe, yeah",
+      "I just want you to come with me",
+      "We on another mentality",
+      "They point out the colors in you, I see 'em too",
+      "And, boy, I like 'em, I like 'em",
+      "We're way too fly to partake in all this hate",
+      "We out here vibin', we vibin",
+    ];
+
+    function getVerse() {
+      const verse = verses[Math.floor(Math.random() * verses.length)];
+      document.getElementById('verse-display').textContent = verse;
+    }
+  </script>
+
+</body>
+</html>
