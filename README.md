@@ -24,7 +24,7 @@ this was a great project for me to practice my **web development** skills and ex
 ![ ](2.png)
 
 ## 📌 how to access
-you can check out the project by visiting: https://scriptlver.github.io/no-tears-left-to-cry-/
+you can check out the project by visiting: https://scriptlver.github.io/no-tears-left-to-cry-site
 
 ## 💗 contributing
 feel free to open issues or pull requests if you have any suggestions or improvements!
